@@ -37,12 +37,12 @@ def main():
             pdf_writer.write(fout)
         print "Created: {}".format(os.path.basename(file_out))
 
-    more = raw_input("Finished! Do you want to split more? (y/n):\n")
+    more = raw_input("Finished! Do you want to split more? (y/n):\n")   # Python 2.7
     return more == 'y'
 
 
 if __name__ == '__main__':
-    print "Staring PDF Splitter"
+    print "Starting PDF Splitter"
     split_more = True
     while split_more:
         split_more = main()
